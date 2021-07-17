@@ -1,13 +1,23 @@
 {% extends 'root/base.html' %}
 
+
 {% block content %}
     <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.text | linebreaksbr }}</p>
+        <div class="row row-p">
+            <h2 style="width: 650px;"><a href="">{{ post.title }}</a></h2>
+            <div class="mid-d"></div>
+            {% if user.is_authenticated %}
+                <a class="btn btn-default"
+                   style="height: 40px; font-size: 17px; color: black; border: 2px black solid; width: 40px; padding: 10px 10px; border-radius: 3px;"
+                   href="{% url 'post_edit' pk=post.pk %}"><span
+                        class="glyphicon glyphicon-pencil"></span></a>
+            {% endif %}
+            {% if post.published_date %}
+                <div class="date">
+                    {{ post.published_date }}
+                </div>
+            {% endif %}
+        </div>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}

@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #708090;
+    background-color: #008B8B;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -20,6 +20,9 @@ h1, h2, h3, h4 {
 
 .date {
     color: #828282;
+    width: 350px;
+    direction: rtl;
+    padding-top: 8px;
 }
 
 .save {
@@ -43,4 +46,13 @@ h1, h2, h3, h4 {
 
 .post h2 a, .post h2 a:visited {
     color: #000000;
+}
+
+.row-p {
+    display: flex;
+    width: 100%;
+}
+
+.mid-d {
+    width: 100%;
 }
