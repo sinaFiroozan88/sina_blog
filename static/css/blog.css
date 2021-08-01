@@ -16,7 +16,7 @@
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Zen Loop', cursive;
 }
 
 .date {
@@ -56,4 +56,10 @@ h1, h2, h3, h4 {
 
 .mid-d {
     width: 100%;
+}
+
+h2, h2 a, h2 a:hover {
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: none;
 }
